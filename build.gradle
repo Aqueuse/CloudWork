@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+apply plugin: 'java'
+
+application {
+    mainClassName = 'wordcloud'
+}
+
+dependencies {
+    implementation fileTree('lib')
+}
+
+jar {
+	archiveClassifier = 'uber'
+	from sourceSets.main.output
+	dependsOn configurations.runtimeClasspath
+
+    // copy the jar dependencies into the FatJar (aka uberJar)
+	from {
+		configurations.runtimeClasspath.findAll { it.name.endsWith('jar') }.collect { zipTree(it) }
+	}
+
+    // copy the manifest with the correct main class
+    manifest {
+        attributes("Implementation-Title": "Gradle",
+                   "Implementation-Version": archiveVersion,
+                   "Main-Class": "wordcloud")
+    }
+
+    // copy all the content of the ressources folder (txt, img, etc) in a ressources folder in the fatJar
+    into 'ressources', {
+        from 'ressources'
+    }
+}
