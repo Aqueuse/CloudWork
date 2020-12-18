@@ -1,24 +1,22 @@
 import java.io.FileWriter;
-import java.io.File;
-import java.io.IOException;
-
-import com.fasterxml.jackson.databind.JsonNode;
+import javax.json.*;
 
 public class extractJSON {
-     public static void extractWords(JsonNode jsonNode) throws Exception, IOException {
-        String brutResult = " ";
-        FileWriter wordsWrite = new FileWriter(new File("ressources/words.txt"), false);
+    public static void extractWords(JsonObject jsonObject) throws Exception {
+        JsonArray brutResult;
+        String finalResult = "";
+        FileWriter wordsWrite = new FileWriter("ressources/words.txt", false);
 
-        for (int r = 0; r < jsonNode.get("resultats").size(); r++) {
-            brutResult = brutResult.concat(jsonNode.get("resultats").get(r).get("description") + " ");
+        brutResult = jsonObject.getJsonArray("resultats");
+
+        for (int r = 0; r < brutResult.size(); r++) {
+            finalResult = finalResult.concat(brutResult.get(r).asJsonObject().getString("description") + " ");
         }
 
-        String tmpList[] = brutResult.split(" ");
+        wordsWrite.append(finalResult);
+        System.out.println(finalResult);
 
-        for (int s = 0; s < brutResult.split(" ").length; s++) {
-            wordsWrite.append(tmpList[s] + "\n");
-        }
         wordsWrite.close();
-         System.out.println("words extracted in resources/words.txt");
+        System.out.println("words extracted in resources/words.txt");
     }
 }

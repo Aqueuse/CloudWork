@@ -5,6 +5,7 @@ library("wordcloud")
 library("RColorBrewer")
 library("stringi")
 library("svglite")
+library("utf8")
 
 # set the working directory
 # first line in for windows / second line is for GNU/Linux
@@ -14,6 +15,7 @@ setwd("E://backup_data_files/JavaProjects/poleEmploi/ressources/")
 # read the words file
 filePath <- ("./words.txt")
 text <- readLines(filePath)
+text <- as_utf8(text, normalize = TRUE)
 
 # Load the data as a corpus
 # first line in for windows / second line is for GNU/Linux
@@ -29,7 +31,9 @@ docs <- tm_map(docs, toSpace, "\\|")
 
 # replace non-convertible bytes in the corpus with strings showing their hex codes
 # also subtily convert the text to lower case
-docs <- tm_map(docs, content_transformer(stri_trans_tolower))
+#docs <- tm_map(docs, content_transformer(stri_trans_tolower))
+
+docs <- tm_map(docs, content_transformer(tolower))
 
 # Remove numbers
 docs <- tm_map(docs, removeNumbers)
@@ -47,14 +51,17 @@ dtm <- TermDocumentMatrix(docs)
 m <- as.matrix(dtm)
 v <- sort(rowSums(m),decreasing = TRUE)
 d <- data.frame(word = names(v),freq = v)
-head(d, 10)
 
-svglite(file = "./cloud.svg")
+print(d)
+
+#svglite(file = "./cloud.svg")
 #jpeg(filename = "./cloud.jpg")
 
-set.seed(1234)
-wordcloud(words = d$word, freq = d$freq, min.freq = 1,
-  max.words = 200, random.order = FALSE, rot.per = 0.35, 
-  colors = brewer.pal(8, "Dark2"))
+#set.seed(1234)
+#wordcloud(words = d$word, freq = d$freq, min.freq = 1,
+#  max.words = 200, random.order = FALSE, rot.per = 0.35, 
+#  colors = brewer.pal(8, "Dark2"))
 
-dev.off()
+#dev.off()
+
+write.csv(file = "./actualWordsFreq.csv", x = d, fileEncoding = "UTF-8")

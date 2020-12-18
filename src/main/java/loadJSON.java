@@ -1,41 +1,30 @@
-import com.fasterxml.jackson.core.JsonFactory;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.core.JsonParser;
-import com.fasterxml.jackson.core.JsonProcessingException;
-
-import java.io.File;
-import java.io.IOException;
+import javax.json.Json;
+import javax.json.JsonObject;
+import javax.json.JsonReader;
+import java.io.FileReader;
+import java.io.StringReader;
 
 public class loadJSON {
-    public static JsonNode loadFromFile(String path) {
-        JsonFactory factory = new JsonFactory();
-        ObjectMapper mapper = new ObjectMapper();
-        JsonNode JSONnode = null;
-        
+    private static JsonObject JSONnode;
+
+    public static JsonObject loadFromFile(String path) {
         try {
-            File data = new File(path);
-            factory = mapper.getFactory();
-            JsonParser parser = factory.createParser(data);
-            JSONnode = mapper.readTree(parser);
-
-        } catch (IOException io) {
-            System.out.println(io + "in class loadJSON in method loadFromFile");
+            JsonReader reader = Json.createReader(new FileReader(path));
+            JSONnode = (JsonObject) reader.read();
         }
-
+        catch (Exception e) {
+            System.out.println(e + "in class loadJSON in method loadFromFile");
+        }
         return JSONnode;
     }
 
-    public static JsonNode loadFromString(String source) {
-        JsonFactory factory = new JsonFactory();
-        ObjectMapper mapper = new ObjectMapper();
-        JsonNode JSONnode = null;
-
+    public static JsonObject loadFromString(String source) {
         try {
-            JSONnode = mapper.readTree(source);
-
-        } catch (JsonProcessingException Joups) {
-            System.out.println(Joups + "/ in class loadJSON in method loadFromString");
+            JsonReader reader = Json.createReader(new StringReader(source));
+            JSONnode = (JsonObject) reader.read();
+        }
+        catch (Exception e) {
+            System.out.println(e + "/ in class loadJSON in method loadFromString");
         }
 
         return JSONnode;
