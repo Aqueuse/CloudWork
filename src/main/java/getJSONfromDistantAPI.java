@@ -29,9 +29,9 @@ public class getJSONfromDistantAPI {
         connexion.setDoOutput(true);
 
         String credentials = "grant_type=client_credentials&" +
-                "client_id=PAR_nuagesdemotsdynamiques_ade2949a6d4a0541b164994bcf27d418a80445c8066f02133bc8d0dbe86f9bb2&" +
-                "client_secret=311ca44a9ad43edaccff5e57a30294e236511ffd4c039794d990517c10198d4e&" +
-                "scope=api_offresdemploiv2 application_PAR_nuagesdemotsdynamiques_ade2949a6d4a0541b164994bcf27d418a80445c8066f02133bc8d0dbe86f9bb2 o2dsoffre";
+                "client_id=PAR_the_id" +
+                "client_secret=the_secret" +
+                "scope=api_offresdemploiv2 application_PAR_the_id o2dsoffre";
 
         OutputStream out = connexion.getOutputStream();
         byte[] byteCred = credentials.getBytes(StandardCharsets.UTF_8);
