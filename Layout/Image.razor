@@ -1,0 +1,19 @@
+﻿<div class="cloudImage">
+    <img src="@imagePath" alt="result of the search">
+</div>
+
+@code {
+    string imagePath = "assets/loadingCloud.gif";
+
+    public void ShowLoadingImage() {
+        imagePath = "assets/loadingCloud.gif";
+        
+        StateHasChanged();
+    }
+    
+    public void RefreshImage() {
+        imagePath = "assets/cloud.png";
+        
+        StateHasChanged();
+    }
+}

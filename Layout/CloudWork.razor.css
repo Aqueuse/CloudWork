@@ -1,0 +1,35 @@
+﻿.searchBarBlock {
+    text-align: center;
+}
+
+.cherry-bomb-one-regular {
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-family: "Cherry Bomb One", cursive !important;
+}
+
+.title {
+    font-size: 80px;
+    font-family: "Cherry Bomb One", cursive !important;
+}
+
+.normalDescription {
+    font-size: medium;
+    font-family: "Cherry Bomb One", system-ui;
+}
+
+.collapsedDescription {
+    font-size: 0;
+}
+
+.inputSearch {
+    
+}
+
+.buttonSearch {
+    
+}
