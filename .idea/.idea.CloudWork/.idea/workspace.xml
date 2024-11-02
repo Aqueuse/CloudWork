@@ -9,24 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07fa74ce-f4e4-4d95-8d67-20544f89caa4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Layout/CloudImage.razor.css" afterDir="false" />
+    <list default="true" id="07fa74ce-f4e4-4d95-8d67-20544f89caa4" name="Changes" comment="Removed bootstrap (was causing too much problems with local fonts) + advanced on the frontend">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CloudWork/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CloudWork/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.razor" beforeDir="false" afterPath="$PROJECT_DIR$/App.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CloudWork.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CloudWork.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Layout/CloudWork.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Layout/CloudWork.razor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Layout/CloudWorkSearch.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Layout/CloudWork.razor.css" beforeDir="false" afterPath="$PROJECT_DIR$/Layout/CloudWorkSearch.razor.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Layout/Image.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Layout/CloudImage.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Layout/Image.razor.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Layout/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Layout/MainLayout.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Layout/MainLayout.razor.css" beforeDir="false" afterPath="$PROJECT_DIR$/Layout/MainLayout.razor.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Home.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Home.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_Imports.razor" beforeDir="false" afterPath="$PROJECT_DIR$/_Imports.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Layout/CloudWorkSearch.razor.css" beforeDir="false" afterPath="$PROJECT_DIR$/Layout/CloudWorkSearch.razor.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wwwroot/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/css/bootstrap/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/css/bootstrap/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wwwroot/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +33,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Layout/CloudImage.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Layout/CloudWorkSearch.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="mock://D:/Artisanat/informatique/CSharpProjects/CloudWorkWASM/CloudWork/_Imports.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
@@ -144,7 +131,7 @@
       <workItem from="1730478644993" duration="14696000" />
       <workItem from="1730501126405" duration="122000" />
       <workItem from="1730530512350" duration="7516000" />
-      <workItem from="1730538153570" duration="1364000" />
+      <workItem from="1730538153570" duration="2492000" />
     </task>
     <task id="LOCAL-00001" summary="réécriture de l'application avec Blazor dans l'optique de la rendre disponible sur une page github">
       <option name="closed" value="true" />
@@ -162,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730501171629</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Removed bootstrap (was causing too much problems with local fonts) + advanced on the frontend">
+      <option name="closed" value="true" />
+      <created>1730539609406</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730539609406</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +181,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="réécriture de l'application avec Blazor dans l'optique de la rendre disponible sur une page github" />
     <MESSAGE value="switched to blazor" />
-    <option name="LAST_COMMIT_MESSAGE" value="switched to blazor" />
+    <MESSAGE value="Removed bootstrap (was causing too much problems with local fonts) + advanced on the frontend" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed bootstrap (was causing too much problems with local fonts) + advanced on the frontend" />
   </component>
 </project>
