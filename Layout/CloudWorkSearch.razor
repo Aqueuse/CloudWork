@@ -1,0 +1,63 @@
+﻿<div class="searchBarBlock">
+    <h1 class="title">CloudWork</h1>
+    <p class="@descriptionClass">Visualisez les mots clés d'un métier à partir de milliers d'offres</p>
+    <div>
+        <Input type="text" class="inputSearch" placeholder="métier"><button class="buttonSearch" @onclick="Search">Visualiser</button>
+    </div>
+
+    <CloudImage @ref="image"/>
+</div>
+
+@code {
+    private string descriptionClass = "normalDescription";
+    CloudImage? image;
+    
+    private void ShowLoadingImage() {
+        Console.WriteLine(image);
+        
+        image?.ShowLoadingImage();
+    }
+    
+    private void ShowResults() {
+        image?.RefreshImage();
+    }
+    
+    private void Search() {
+        descriptionClass = "collapsedDescription";
+        
+        ShowLoadingImage();
+
+        // DrawCloudFromAPI();
+        //
+        // ShowResults();
+    }
+    
+    private List<string> wordsresult = [];
+
+    private async void DrawCloudFromAPI() {
+        wordsresult = await GetWordsFromApi();
+
+        await WriteResultInFile();
+        
+        await DrawCloud();
+    }
+
+    private Task<List<string>> GetWordsFromApi() {
+        wordsresult.Add("");
+        
+        return Task.FromResult(wordsresult);
+    }
+
+    private static Task WriteResultInFile() {
+        // write the result on file
+
+        return Task.CompletedTask;
+    }
+
+    private static Task DrawCloud() {
+        // call the github action to execute R with the file Result
+        
+        return Task.CompletedTask;
+    }
+
+}

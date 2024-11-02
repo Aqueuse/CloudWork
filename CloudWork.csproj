@@ -10,7 +10,7 @@
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.10"/>
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.10" PrivateAssets="all"/>
     </ItemGroup>
-
+    
     <ItemGroup>
       <Compile Update="Layout\SearchBar.razor.css">
         <DependentUpon>SearchBar.razor</DependentUpon>
@@ -18,6 +18,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="wwwroot\fonts\" />
+        <Compile Update="Layout\CloudImage.razor.css">
+            <DependentUpon>CloudImage.razor</DependentUpon>
+        </Compile>
     </ItemGroup>
 </Project>

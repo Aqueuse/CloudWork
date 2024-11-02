@@ -1,0 +1,9 @@
+﻿.cloudImage {
+    width: 100%;
+    height: auto;
+}
+
+.cloudImageHidden {
+    width: 0;
+    height: auto;
+}

@@ -1,12 +1,17 @@
-﻿<div class="cloudImage">
-    <img src="@imagePath" alt="result of the search">
+﻿<div>
+    <img src="@imagePath" class="@cloudImageClass" alt="result of the search">
 </div>
 
 @code {
     string imagePath = "assets/loadingCloud.gif";
 
+    string cloudImageClass = "cloudImageHidden";
+
     public void ShowLoadingImage() {
+        Console.WriteLine("test");
+        
         imagePath = "assets/loadingCloud.gif";
+        cloudImageClass = "cloudImage";
         
         StateHasChanged();
     }

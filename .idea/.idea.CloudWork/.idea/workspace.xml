@@ -9,7 +9,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07fa74ce-f4e4-4d95-8d67-20544f89caa4" name="Changes" comment="réécriture de l'application avec Blazor dans l'optique de la rendre disponible sur une page github" />
+    <list default="true" id="07fa74ce-f4e4-4d95-8d67-20544f89caa4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Layout/CloudImage.razor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CloudWork/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CloudWork/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.razor" beforeDir="false" afterPath="$PROJECT_DIR$/App.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudWork.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CloudWork.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Layout/CloudWork.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Layout/CloudWork.razor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Layout/CloudWorkSearch.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Layout/CloudWork.razor.css" beforeDir="false" afterPath="$PROJECT_DIR$/Layout/CloudWorkSearch.razor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Layout/Image.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Layout/CloudImage.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Layout/Image.razor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Layout/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Layout/MainLayout.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Layout/MainLayout.razor.css" beforeDir="false" afterPath="$PROJECT_DIR$/Layout/MainLayout.razor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Home.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Home.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_Imports.razor" beforeDir="false" afterPath="$PROJECT_DIR$/_Imports.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/css/bootstrap/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/css/bootstrap/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wwwroot/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/wwwroot/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +44,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Layout/CloudImage.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Layout/CloudWorkSearch.razor" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -41,27 +63,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.CloudWork: IIS Express.executor": "Run",
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.CloudWork: IIS Express.executor&quot;: &quot;Run&quot;,
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\jaima\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\jaima\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\jaima\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\jaima\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\jaima\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\jaima\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.CloudWork: IIS Express">
     <configuration name="CloudWork: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/CloudWork.csproj" />
@@ -120,6 +142,9 @@
       <workItem from="1730463538176" duration="1633000" />
       <workItem from="1730475560582" duration="1708000" />
       <workItem from="1730478644993" duration="14696000" />
+      <workItem from="1730501126405" duration="122000" />
+      <workItem from="1730530512350" duration="7516000" />
+      <workItem from="1730538153570" duration="1364000" />
     </task>
     <task id="LOCAL-00001" summary="réécriture de l'application avec Blazor dans l'optique de la rendre disponible sur une page github">
       <option name="closed" value="true" />
@@ -129,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730499520963</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="switched to blazor">
+      <option name="closed" value="true" />
+      <created>1730501171629</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730501171629</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +185,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="réécriture de l'application avec Blazor dans l'optique de la rendre disponible sur une page github" />
-    <option name="LAST_COMMIT_MESSAGE" value="réécriture de l'application avec Blazor dans l'optique de la rendre disponible sur une page github" />
+    <MESSAGE value="switched to blazor" />
+    <option name="LAST_COMMIT_MESSAGE" value="switched to blazor" />
   </component>
 </project>

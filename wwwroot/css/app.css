@@ -1,22 +1,14 @@
 @font-face {
     font-family: 'Cherry Bomb One';
-    src: url('fonts/CherryBombOne-Regular.ttf') format('truetype');
+    src: url('../fonts/CherryBombOne-Regular.ttf') format('truetype');
 }
 
-:root {
-    --bs-font-sans-serif: "Cherry Bomb One", Roboto, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans";
-}
-
-body {
+html, body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-h1 {
-    font-family: "Cherry Bomb One", cursive;
-}
-
-h1:focus {
-    outline: none;
 }
 
 a, .btn-link {
