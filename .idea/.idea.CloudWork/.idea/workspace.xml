@@ -10,12 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="07fa74ce-f4e4-4d95-8d67-20544f89caa4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DataParsing/WordsToCloud.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/FranceTravail.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source_Offres.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CloudWork/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CloudWork/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CloudWork.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CloudWork.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataParsing/WordsToCloud.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataParsing/WordsToCloud.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Layout/CloudWorkSearch.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Layout/CloudWorkSearch.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/FranceTravail.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/FranceTravail.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ressources/access.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +137,8 @@
       <workItem from="1730530512350" duration="7516000" />
       <workItem from="1730538153570" duration="3909000" />
       <workItem from="1731344640798" duration="675000" />
-      <workItem from="1731744305790" duration="3868000" />
+      <workItem from="1731744305790" duration="3930000" />
+      <workItem from="1731829102725" duration="4259000" />
     </task>
     <task id="LOCAL-00001" summary="réécriture de l'application avec Blazor dans l'optique de la rendre disponible sur une page github">
       <option name="closed" value="true" />
@@ -170,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730540816974</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="will try to do it totally on CSharp">
+      <option name="closed" value="true" />
+      <created>1731748473905</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1731748473905</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +206,7 @@
     <MESSAGE value="switched to blazor" />
     <MESSAGE value="Removed bootstrap (was causing too much problems with local fonts) + advanced on the frontend" />
     <MESSAGE value="finished the frontend" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished the frontend" />
+    <MESSAGE value="will try to do it totally on CSharp" />
+    <option name="LAST_COMMIT_MESSAGE" value="will try to do it totally on CSharp" />
   </component>
 </project>

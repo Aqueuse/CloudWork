@@ -3,7 +3,7 @@
     <h1 class="title">CloudWork</h1>
     <p class="@descriptionClass">Visualisez les mots clés d'un métier à partir de milliers d'offres</p>
     <div>
-        <Input type="text" class="inputSearch" placeholder="métier"><button class="buttonSearch" @onclick="Search">Visualiser</button>
+        <Input type="text" @bind="@keyword" class="inputSearch" placeholder="métier"><button class="buttonSearch" @onclick="Search">Visualiser</button>
     </div>
 
     <CloudImage @ref="image"/>
@@ -12,6 +12,9 @@
 @code {
     private string descriptionClass = "normalDescription";
     CloudImage? image;
+
+    string? keyword;
+    bool CloudSuccess;
     
     private void ShowLoadingImage() {
         Console.WriteLine(image);
@@ -33,19 +36,17 @@
         ShowResults();
     }
     
-    private List<string> wordsresult = [];
-
     private async void DrawCloudFromAPI() {
         WordsToCloud wordsToCloud = new WordsToCloud(Source_Offres.FRANCE_TRAVAIL);
 
-        bool succeeded = await wordsToCloud.GenerateCloud();
+        if (keyword != null) CloudSuccess = await wordsToCloud.GenerateCloudFromKeyword(keyword);
 
-        if (succeeded = true) {
-            //image = cloud.png 
+        if (CloudSuccess) {
+            // image = gif failed.gif
         }
 
         else {
-            // image = gif failed.gif
+            //image = cloud.png 
         }
     }
 }
